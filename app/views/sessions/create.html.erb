@@ -1,4 +1,32 @@
 <% @auth_hash.each do |key,value| %>
+
   <h1><%= key %></h1>
   <p><%= value %></p>
 <% end %>
+
+<% @info_hash.each do |key,value| %>
+
+  <h1><%= key %></h1>
+  <p><%= value %></p>
+<% end %>
+
+<% @cred_hash.each do |key,value| %>
+
+  <h1><%= key %></h1>
+  <p><%= value %></p>
+<% end %>
+
+<% @extra_hash.each do |key,value| %>
+
+  <h1><%= key %></h1>
+  <p><%= value %></p>
+<% end %>
+
+<% @raw_hash.each do |key,value| %>
+
+  <h1><%= key %></h1>
+  <p><%= value %></p>
+<% end %>
+
+
+  <div><%= link_to 'Sign out!', '/signout' %></div>
