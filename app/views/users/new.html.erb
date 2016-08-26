@@ -1,7 +1,7 @@
 <% if current_user %>
-  <li>Welcome <%=  #{current_user.name} %></li>
-  <!-- <li>Welcome </li> -->
+  <div>Welcome <%=  current_user.name %></div>
+  <div><%= link_to 'Sign out!', '/signout' %></div>
 
 <% else %>
-  <li><%= link_to "Sign in with Github", '/auth/github' %></li>
-  <!-- <li><%= link_to "Authenticate with Google!", '/auth/google_oauth2' %> -->
+  <div><%= link_to 'Sign In With GitHub', '/auth/github' %><div>
+<% end %>
